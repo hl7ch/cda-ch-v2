@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.1.12&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CDACHv20NonXMLBody"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CDACHv20NonXMLBody"/>
+   <name value="ClinicalDocument"/>
+   <title value="CDA-CH v2.0 - nonXMLBody"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="ClinicalDocument"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ClinicalDocument"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="ClinicalDocument">
+         <path value="ClinicalDocument"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.realmCode">
+         <path value="ClinicalDocument.realmCode"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.realmCode.code">
+         <path value="ClinicalDocument.realmCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="CHE"/>
+      </element>
+      <element id="ClinicalDocument.typeId">
+         <path value="ClinicalDocument.typeId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.typeId.root">
+         <path value="ClinicalDocument.typeId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.1.3"/>
+      </element>
+      <element id="ClinicalDocument.typeId.extension">
+         <path value="ClinicalDocument.typeId.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="POCD_HD000040"/>
+      </element>
+      <element id="ClinicalDocument.templateId">
+         <path value="ClinicalDocument.templateId"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="root"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="ClinicalDocument.templateId:21675653011114">
+         <path value="ClinicalDocument.templateId"/>
+         <sliceName value="21675653011114"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.templateId:21675653011114.root">
+         <path value="ClinicalDocument.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.1.1.4"/>
+      </element>
+      <element id="ClinicalDocument.templateId:CDACHv20NonXMLBody">
+         <path value="ClinicalDocument.templateId"/>
+         <sliceName value="CDACHv20NonXMLBody"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.templateId:CDACHv20NonXMLBody.root">
+         <path value="ClinicalDocument.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.1.12"/>
+      </element>
+      <element id="ClinicalDocument.templateId:216840111388310123">
+         <path value="ClinicalDocument.templateId"/>
+         <sliceName value="216840111388310123"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.templateId:216840111388310123.root">
+         <path value="ClinicalDocument.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.10.12.3"/>
+      </element>
+      <element id="ClinicalDocument.templateId:216840111388310121">
+         <path value="ClinicalDocument.templateId"/>
+         <sliceName value="216840111388310121"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.templateId:216840111388310121.root">
+         <path value="ClinicalDocument.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.10.12.1"/>
+      </element>
+      <element id="ClinicalDocument.id">
+         <path value="ClinicalDocument.id"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.id.root">
+         <path value="ClinicalDocument.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.id.extension">
+         <path value="ClinicalDocument.id.extension"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="ClinicalDocument.code">
+         <path value="ClinicalDocument.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.code.code">
+         <path value="ClinicalDocument.code.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.code.codeSystem">
+         <path value="ClinicalDocument.code.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.6.1"/>
+      </element>
+      <element id="ClinicalDocument.code.codeSystemName">
+         <path value="ClinicalDocument.code.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="LOINC"/>
+      </element>
+      <element id="ClinicalDocument.code.displayName">
+         <path value="ClinicalDocument.code.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.code.translation">
+         <path value="ClinicalDocument.code.translation"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.756.5.30.1.127.3.10.1.27-->
+      </element>
+      <element id="ClinicalDocument.code.translation.code">
+         <path value="ClinicalDocument.code.translation.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.code.translation.codeSystem">
+         <path value="ClinicalDocument.code.translation.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.6.96"/>
+      </element>
+      <element id="ClinicalDocument.code.translation.codeSystemName">
+         <path value="ClinicalDocument.code.translation.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="SNOMED CT"/>
+      </element>
+      <element id="ClinicalDocument.code.translation.displayName">
+         <path value="ClinicalDocument.code.translation.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.title">
+         <path value="ClinicalDocument.title"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.effectiveTime">
+         <path value="ClinicalDocument.effectiveTime"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.confidentialityCode">
+         <path value="ClinicalDocument.confidentialityCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://fhir.ch/ig/ch-epr/ValueSet/DocumentEntry.confidentialityCode"/>
+         </binding>
+      </element>
+      <element id="ClinicalDocument.confidentialityCode.code">
+         <path value="ClinicalDocument.confidentialityCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.confidentialityCode.codeSystem">
+         <path value="ClinicalDocument.confidentialityCode.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.6.96"/>
+      </element>
+      <element id="ClinicalDocument.confidentialityCode.codeSystemName">
+         <path value="ClinicalDocument.confidentialityCode.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="SNOMED CT"/>
+      </element>
+      <element id="ClinicalDocument.confidentialityCode.displayName">
+         <path value="ClinicalDocument.confidentialityCode.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.languageCode">
+         <path value="ClinicalDocument.languageCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.11526-->
+      </element>
+      <element id="ClinicalDocument.setId">
+         <path value="ClinicalDocument.setId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.setId.root">
+         <path value="ClinicalDocument.setId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.setId.extension">
+         <path value="ClinicalDocument.setId.extension"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="ClinicalDocument.versionNumber">
+         <path value="ClinicalDocument.versionNumber"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.recordTarget">
+         <path value="ClinicalDocument.recordTarget"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderPatient"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.author">
+         <path value="ClinicalDocument.author"/>
+         <min value="1"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachOtherAuthor"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.dataEnterer">
+         <path value="ClinicalDocument.dataEnterer"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/DataEnterer"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderDataEnterer"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.informant">
+         <path value="ClinicalDocument.informant"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.informant.typeCode">
+         <path value="ClinicalDocument.informant.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="INF"/>
+      </element>
+      <element id="ClinicalDocument.informant.contextControlCode">
+         <path value="ClinicalDocument.informant.contextControlCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="OP"/>
+      </element>
+      <element id="ClinicalDocument.informant.assignedEntity">
+         <path value="ClinicalDocument.informant.assignedEntity"/>
+      </element>
+      <element id="ClinicalDocument.informant.relatedEntity">
+         <path value="ClinicalDocument.informant.relatedEntity"/>
+      </element>
+      <element id="ClinicalDocument.custodian">
+         <path value="ClinicalDocument.custodian"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderCustodian"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.informationRecipient">
+         <path value="ClinicalDocument.informationRecipient"/>
+         <min value="1"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderInformationRecipient"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.legalAuthenticator">
+         <path value="ClinicalDocument.legalAuthenticator"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/LegalAuthenticator"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderLegalAuthenticator"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.authenticator">
+         <path value="ClinicalDocument.authenticator"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Authenticator"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderAuthenticator"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.participant">
+         <path value="ClinicalDocument.participant"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="templateId.root"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="ClinicalDocument.participant:CdachHeaderEmployer">
+         <path value="ClinicalDocument.participant"/>
+         <sliceName value="CdachHeaderEmployer"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderEmployer"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.participant:CdachHeaderInsurance">
+         <path value="ClinicalDocument.participant"/>
+         <sliceName value="CdachHeaderInsurance"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderInsurance"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.participant:CdachHeaderInsuranceCard">
+         <path value="ClinicalDocument.participant"/>
+         <sliceName value="CdachHeaderInsuranceCard"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderInsuranceCard"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.participant:CdachHeaderPatientContact">
+         <path value="ClinicalDocument.participant"/>
+         <sliceName value="CdachHeaderPatientContact"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderPatientContact"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.inFulfillmentOf">
+         <path value="ClinicalDocument.inFulfillmentOf"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderOrderReference"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.documentationOf">
+         <path value="ClinicalDocument.documentationOf"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/DocumentationOf"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderHealthService"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.relatedDocument">
+         <path value="ClinicalDocument.relatedDocument"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedDocument"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderDocumentReplacement"/>
+         </type>
+      </element>
+      <element id="ClinicalDocument.authorization">
+         <path value="ClinicalDocument.authorization"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.authorization.typeCode">
+         <path value="ClinicalDocument.authorization.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="AUTH"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent">
+         <path value="ClinicalDocument.authorization.consent"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.classCode">
+         <path value="ClinicalDocument.authorization.consent.classCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="CONS"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.moodCode">
+         <path value="ClinicalDocument.authorization.consent.moodCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="EVN"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.id">
+         <path value="ClinicalDocument.authorization.consent.id"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.code">
+         <path value="ClinicalDocument.authorization.consent.code"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.statusCode">
+         <path value="ClinicalDocument.authorization.consent.statusCode"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.authorization.consent.statusCode.code">
+         <path value="ClinicalDocument.authorization.consent.statusCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="completed"/>
+      </element>
+      <element id="ClinicalDocument.componentOf">
+         <path value="ClinicalDocument.componentOf"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.typeCode">
+         <path value="ClinicalDocument.componentOf.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="COMP"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.classCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.classCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="ENC"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.moodCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.moodCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="EVN"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.id">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.id"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.code">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.code"/>
+         <min value="0"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.13955-->
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.effectiveTime">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.effectiveTime"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.dischargeDispositionCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.dischargeDispositionCode"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.responsibleParty">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.responsibleParty"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.responsibleParty.typeCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.responsibleParty.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="RESP"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.typeCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.time">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.time"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.typeCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="LOC"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.classCode">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.classCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="SDLOC"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.id">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.id"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.code">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.code"/>
+         <min value="0"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.17660-->
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.location">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.location"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.serviceProviderOrganization">
+         <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.serviceProviderOrganization"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.component">
+         <path value="ClinicalDocument.component"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.component.nonXMLBody">
+         <path value="ClinicalDocument.component.nonXMLBody"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="ClinicalDocument.component.nonXMLBody.text">
+         <path value="ClinicalDocument.component.nonXMLBody.text"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

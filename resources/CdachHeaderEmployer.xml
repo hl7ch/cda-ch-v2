@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.40&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderEmployer"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderEmployer"/>
+   <name value="Participant"/>
+   <title value="Employer - participant"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="Participant"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Participant">
+         <path value="Participant"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="Participant.typeCode">
+         <path value="Participant.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="IND"/>
+      </element>
+      <element id="Participant.templateId">
+         <path value="Participant.templateId"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="root"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="Participant.templateId:CdachHeaderEmployer">
+         <path value="Participant.templateId"/>
+         <sliceName value="CdachHeaderEmployer"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.templateId:CdachHeaderEmployer.root">
+         <path value="Participant.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.40"/>
+      </element>
+      <element id="Participant.templateId:2167565301110241">
+         <path value="Participant.templateId"/>
+         <sliceName value="2167565301110241"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="Participant.templateId:2167565301110241.root">
+         <path value="Participant.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.41"/>
+      </element>
+      <element id="Participant.templateId:13614119376153122">
+         <path value="Participant.templateId"/>
+         <sliceName value="13614119376153122"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.templateId:13614119376153122.root">
+         <path value="Participant.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="1.3.6.1.4.1.19376.1.5.3.1.2.2"/>
+      </element>
+      <element id="Participant.time">
+         <path value="Participant.time"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.time.low">
+         <path value="Participant.time.low"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.time.high">
+         <path value="Participant.time.high"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity">
+         <path value="Participant.associatedEntity"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.classCode">
+         <path value="Participant.associatedEntity.classCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="CON"/>
+      </element>
+      <element id="Participant.associatedEntity.id">
+         <path value="Participant.associatedEntity.id"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.id.root">
+         <path value="Participant.associatedEntity.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.id.extension">
+         <path value="Participant.associatedEntity.id.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.code">
+         <path value="Participant.associatedEntity.code"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.756.5.30.1.1.11.77-->
+      </element>
+      <element id="Participant.associatedEntity.code.code">
+         <path value="Participant.associatedEntity.code.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.code.codeSystem">
+         <path value="Participant.associatedEntity.code.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="1.3.6.1.4.1.19376.1.5.3.3"/>
+      </element>
+      <element id="Participant.associatedEntity.code.codeSystemName">
+         <path value="Participant.associatedEntity.code.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="IHERoleCode"/>
+      </element>
+      <element id="Participant.associatedEntity.code.displayName">
+         <path value="Participant.associatedEntity.code.displayName"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Participant.associatedEntity.associatedPerson">
+         <path value="Participant.associatedEntity.associatedPerson"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="Participant.associatedEntity.scopingOrganization">
+         <path value="Participant.associatedEntity.scopingOrganization"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

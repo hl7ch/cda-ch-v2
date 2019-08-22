@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.46&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderHealthService"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderHealthService"/>
+   <name value="DocumentationOf"/>
+   <title value="Health Service - documentationOf"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="DocumentationOf"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/DocumentationOf"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="DocumentationOf">
+         <path value="DocumentationOf"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="DocumentationOf.typeCode">
+         <path value="DocumentationOf.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="DOC"/>
+      </element>
+      <element id="DocumentationOf.templateId">
+         <path value="DocumentationOf.templateId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.templateId.root">
+         <path value="DocumentationOf.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.46"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent">
+         <path value="DocumentationOf.serviceEvent"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.classCode">
+         <path value="DocumentationOf.serviceEvent.classCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="ACT"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.moodCode">
+         <path value="DocumentationOf.serviceEvent.moodCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="EVN"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.id">
+         <path value="DocumentationOf.serviceEvent.id"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.id.root">
+         <path value="DocumentationOf.serviceEvent.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.id.extension">
+         <path value="DocumentationOf.serviceEvent.id.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code">
+         <path value="DocumentationOf.serviceEvent.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.nullFlavor">
+         <path value="DocumentationOf.serviceEvent.code.nullFlavor"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="NAV"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.code">
+         <path value="DocumentationOf.serviceEvent.code.code"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.codeSystem">
+         <path value="DocumentationOf.serviceEvent.code.codeSystem"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.codeSystemName">
+         <path value="DocumentationOf.serviceEvent.code.codeSystemName"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.displayName">
+         <path value="DocumentationOf.serviceEvent.code.displayName"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.translation">
+         <path value="DocumentationOf.serviceEvent.code.translation"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.translation.code">
+         <path value="DocumentationOf.serviceEvent.code.translation.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.translation.codeSystem">
+         <path value="DocumentationOf.serviceEvent.code.translation.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.translation.codeSystemName">
+         <path value="DocumentationOf.serviceEvent.code.translation.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.code.translation.displayName">
+         <path value="DocumentationOf.serviceEvent.code.translation.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.effectiveTime">
+         <path value="DocumentationOf.serviceEvent.effectiveTime"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.effectiveTime.low">
+         <path value="DocumentationOf.serviceEvent.effectiveTime.low"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.effectiveTime.high">
+         <path value="DocumentationOf.serviceEvent.effectiveTime.high"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="DocumentationOf.serviceEvent.performer">
+         <path value="DocumentationOf.serviceEvent.performer"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer"/>
+            <profile value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachOtherPerformer"/>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

@@ -1,0 +1,9 @@
+resources/ig-validation-parameters.json
+resources/ig-expansion-parameters.json
+resources/ig-new.json
+resources/ig-new.xml
+output
+qa
+temp
+template/
+.project

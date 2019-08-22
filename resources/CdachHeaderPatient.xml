@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.1&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderPatient"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderPatient"/>
+   <name value="RecordTarget"/>
+   <title value="Patient - recordTarget"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="RecordTarget"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="RecordTarget">
+         <path value="RecordTarget"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.templateId">
+         <path value="RecordTarget.templateId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.templateId.root">
+         <path value="RecordTarget.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.1"/>
+      </element>
+      <element id="RecordTarget.patientRole">
+         <path value="RecordTarget.patientRole"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.id">
+         <path value="RecordTarget.patientRole.id"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.id.root">
+         <path value="RecordTarget.patientRole.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.id.extension">
+         <path value="RecordTarget.patientRole.id.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.addr">
+         <path value="RecordTarget.patientRole.addr"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.telecom">
+         <path value="RecordTarget.patientRole.telecom"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient">
+         <path value="RecordTarget.patientRole.patient"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.administrativeGenderCode">
+         <path value="RecordTarget.patientRole.patient.administrativeGenderCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.756.5.30.1.127.3.10.1.25-->
+      </element>
+      <element id="RecordTarget.patientRole.patient.administrativeGenderCode.code">
+         <path value="RecordTarget.patientRole.patient.administrativeGenderCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.administrativeGenderCode.codeSystem">
+         <path value="RecordTarget.patientRole.patient.administrativeGenderCode.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.5.1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.administrativeGenderCode.codeSystemName">
+         <path value="RecordTarget.patientRole.patient.administrativeGenderCode.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="HL7 AdministrativeGender"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.administrativeGenderCode.displayName">
+         <path value="RecordTarget.patientRole.patient.administrativeGenderCode.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.birthTime">
+         <path value="RecordTarget.patientRole.patient.birthTime"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-MaritalStatus"/>
+         </binding>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.code">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.codeSystem">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.1.11.12212"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.codeSystemName">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="HL7 MaritalStatus"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.displayName">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.translation">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.translation"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.translation.code">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.translation.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.translation.codeSystem">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.translation.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.translation.codeSystemName">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.translation.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.maritalStatusCode.translation.displayName">
+         <path value="RecordTarget.patientRole.patient.maritalStatusCode.translation.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.nullFlavor">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.nullFlavor"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="NAV"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.code">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.codeSystem">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.codeSystemName">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.displayName">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText.reference">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText.reference"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText.reference.value">
+         <path value="RecordTarget.patientRole.patient.religiousAffiliationCode.originalText.reference.value"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian">
+         <path value="RecordTarget.patientRole.patient.guardian"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.id">
+         <path value="RecordTarget.patientRole.patient.guardian.id"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.id.root">
+         <path value="RecordTarget.patientRole.patient.guardian.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.id.extension">
+         <path value="RecordTarget.patientRole.patient.guardian.id.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code">
+         <path value="RecordTarget.patientRole.patient.guardian.code"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code.nullFlavor">
+         <path value="RecordTarget.patientRole.patient.guardian.code.nullFlavor"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code.code">
+         <path value="RecordTarget.patientRole.patient.guardian.code.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code.codeSystem">
+         <path value="RecordTarget.patientRole.patient.guardian.code.codeSystem"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.840.1.113883.5.111"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code.codeSystemName">
+         <path value="RecordTarget.patientRole.patient.guardian.code.codeSystemName"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="HL7RoleCode"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.code.displayName">
+         <path value="RecordTarget.patientRole.patient.guardian.code.displayName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.addr">
+         <path value="RecordTarget.patientRole.patient.guardian.addr"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.telecom">
+         <path value="RecordTarget.patientRole.patient.guardian.telecom"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.guardianPerson">
+         <path value="RecordTarget.patientRole.patient.guardian.guardianPerson"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.guardian.guardianOrganization">
+         <path value="RecordTarget.patientRole.patient.guardian.guardianOrganization"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.birthplace">
+         <path value="RecordTarget.patientRole.patient.birthplace"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.birthplace.place">
+         <path value="RecordTarget.patientRole.patient.birthplace.place"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.birthplace.place.name">
+         <path value="RecordTarget.patientRole.patient.birthplace.place.name"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.birthplace.place.addr">
+         <path value="RecordTarget.patientRole.patient.birthplace.place.addr"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.languageCommunication">
+         <path value="RecordTarget.patientRole.patient.languageCommunication"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RecordTarget.patientRole.patient.languageCommunication.languageCode">
+         <path value="RecordTarget.patientRole.patient.languageCommunication.languageCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.11526-->
+      </element>
+      <element id="RecordTarget.patientRole.patient.languageCommunication.modeCode">
+         <path value="RecordTarget.patientRole.patient.languageCommunication.modeCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.12249-->
+      </element>
+      <element id="RecordTarget.patientRole.patient.languageCommunication.proficiencyLevelCode">
+         <path value="RecordTarget.patientRole.patient.languageCommunication.proficiencyLevelCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.12199-->
+      </element>
+      <element id="RecordTarget.patientRole.patient.languageCommunication.preferenceInd">
+         <path value="RecordTarget.patientRole.patient.languageCommunication.preferenceInd"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="RecordTarget.patientRole.providerOrganization">
+         <path value="RecordTarget.patientRole.providerOrganization"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

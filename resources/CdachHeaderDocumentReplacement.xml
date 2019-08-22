@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.13&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderDocumentReplacement"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderDocumentReplacement"/>
+   <name value="RelatedDocument"/>
+   <title value="Document Replacement - relatedDocument"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="RelatedDocument"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/RelatedDocument"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="RelatedDocument">
+         <path value="RelatedDocument"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="RelatedDocument.typeCode">
+         <path value="RelatedDocument.typeCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="RPLC"/>
+      </element>
+      <element id="RelatedDocument.templateId">
+         <path value="RelatedDocument.templateId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.templateId.root">
+         <path value="RelatedDocument.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.13"/>
+      </element>
+      <element id="RelatedDocument.parentDocument">
+         <path value="RelatedDocument.parentDocument"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.id">
+         <path value="RelatedDocument.parentDocument.id"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.id.root">
+         <path value="RelatedDocument.parentDocument.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.id.extension">
+         <path value="RelatedDocument.parentDocument.id.extension"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.setId">
+         <path value="RelatedDocument.parentDocument.setId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.setId.extension">
+         <path value="RelatedDocument.parentDocument.setId.extension"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.setId.root">
+         <path value="RelatedDocument.parentDocument.setId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="RelatedDocument.parentDocument.versionNumber">
+         <path value="RelatedDocument.parentDocument.versionNumber"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

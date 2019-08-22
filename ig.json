@@ -1,0 +1,43 @@
+{
+	"paths": {
+		"resources": [
+			"resources",
+			"examples-errors",
+			"HipJointReplacement-de"],
+		"pages": "pages",
+		"temp": "temp",
+		"output": "output",
+		"qa": "qa",
+		"specification": "http://build.fhir.org/"
+	},
+	"template": "https://github.com/ahdis/test-template",
+	"version": "4.0.0",
+	"fixed-business-version": "0.0.1",
+	"license": "CC0-1.0",
+	"npm-name": "ch.fhir.ig.cda-ch-v2",
+	"path-pattern": "[type]-[id].html",
+	"extraTemplates": [
+		{
+			"name": "mappings",
+			"description": "Mappings"
+		},
+		{
+			"name": "examples",
+			"description": "Examples"
+		}
+	],
+	"canonicalBase": "http://fhir.ch/ig/cda-ch-v2",
+	"dependencyList": [
+		{
+			"name": "cdacore20",
+			"package": "hl7.fhir.cda",
+			"version": "dev"
+		}
+	],
+	"source": "ch.fhir.ig.cda-ch-v2.xml",
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"special-urls": [],
+	"resources": {
+		"*": "*"
+	}
+}

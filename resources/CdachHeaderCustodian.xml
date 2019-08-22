@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.3&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderCustodian"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderCustodian"/>
+   <name value="Custodian"/>
+   <title value="Custodian"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="Custodian"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Custodian">
+         <path value="Custodian"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.templateId">
+         <path value="Custodian.templateId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.templateId.root">
+         <path value="Custodian.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.3"/>
+      </element>
+      <element id="Custodian.assignedCustodian">
+         <path value="Custodian.assignedCustodian"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.id">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.id"/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.id.root">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.id.root"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.id.extension">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.id.extension"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.name">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.name"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.telecom">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.telecom"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="Custodian.assignedCustodian.representedCustodianOrganization.addr">
+         <path value="Custodian.assignedCustodian.representedCustodianOrganization.addr"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+   </differential>
+</StructureDefinition>

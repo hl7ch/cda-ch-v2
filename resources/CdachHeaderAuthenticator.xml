@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir"
+                          xmlns:ahdis="http://ahdis.ch"
+                         
+                          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta>
+      <source value="http://art-decor.org/decor/services/RetrieveTemplate?format=xml&amp;prefix=&amp;id=2.16.756.5.30.1.1.10.2.6&amp;effectiveDate=dynamic"/>
+   </meta>
+   <id value="CdachHeaderAuthenticator"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CdachHeaderAuthenticator"/>
+   <name value="Authenticator"/>
+   <title value="Authenticator"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="Authenticator"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/Authenticator"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Authenticator">
+         <path value="Authenticator"/>
+         <min value="0"/>
+         <max value="*"/>
+      </element>
+      <element id="Authenticator.templateId">
+         <path value="Authenticator.templateId"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Authenticator.templateId.root">
+         <path value="Authenticator.templateId.root"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="2.16.756.5.30.1.1.10.2.6"/>
+      </element>
+      <element id="Authenticator.time">
+         <path value="Authenticator.time"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Authenticator.signatureCode">
+         <path value="Authenticator.signatureCode"/>
+         <min value="1"/>
+         <max value="1"/>
+         <!--
+              Warning: No corresponding FHIR ValueSet found for
+              2.16.840.1.113883.1.11.10282-->
+      </element>
+      <element id="Authenticator.signatureCode.code">
+         <path value="Authenticator.signatureCode.code"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedString value="S"/>
+      </element>
+      <element id="Authenticator.signatureCode.codeSystem">
+         <path value="Authenticator.signatureCode.codeSystem"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Authenticator.signatureCode.codeSystemName">
+         <path value="Authenticator.signatureCode.codeSystemName"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Authenticator.signatureCode.displayName">
+         <path value="Authenticator.signatureCode.displayName"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+      <element id="Authenticator.assignedEntity">
+         <path value="Authenticator.assignedEntity"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+   </differential>
+</StructureDefinition>

@@ -1,0 +1,57 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="ch.fhir.ig.cda-ch-v2"/>
+   <url value="http://fhir.ch/ig/cda-ch-v2/ImplementationGuide/ch.fhir.ig.cda-ch-v2"/>
+   <name value="CDACHV2"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-07-10"/>
+   <publisher value="HL7 Switzerland"/>
+   <contact>
+      <name value="HL7 Switzerland"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.hl7.ch/"/>
+      </telecom>
+   </contact>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="CH"/>
+      </coding>
+   </jurisdiction>
+   <copyright value="CC-BY-SA-4.0"/>
+   <packageId value="ch.fhir.ig.cda-ch-v2"/>
+   <license value="CC-BY-SA-4.0"/>
+   <fhirVersion value="4.0.0"/>
+   <definition>
+      <grouping>
+         <name value="CDA-CH-V2"/>
+      </grouping>
+<!-- 
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/CDA-CHv20-structuredBodyEnhanced"/>
+         </reference>
+      </resource>      
+      <resource>
+         <reference>
+            <reference value="ClinicalDocument/31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
+         </reference>
+         <name value="1-Zuweisung zur Radiologischen Diagnostik" />
+         <exampleCanonical value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CDA-CHv20-structuredBodyEnhanced"/>
+      </resource>      
+      <resource>
+         <reference>
+            <reference value="ClinicalDocument/cda-ch-header-wrongrealm"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CDA-CHv20-structuredBodyEnhanced"/>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ClinicalDocument/cda-ch-header-wrongtypeid"/>
+         </reference>
+         <exampleCanonical value="http://fhir.ch/ig/cda-ch-v2/StructureDefinition/CDA-CHv20-structuredBodyEnhanced"/>
+      </resource>    
+-->       
+   </definition>
+</ImplementationGuide>
