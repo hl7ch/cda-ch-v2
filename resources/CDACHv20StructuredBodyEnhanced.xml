@@ -159,9 +159,10 @@
          <path value="ClinicalDocument.code.translation"/>
          <min value="1"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.756.5.30.1.127.3.10.1.27-->
+         <binding>
+            <strength value="extensible"/>
+            <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode"/>
+         </binding>
       </element>
       <element id="ClinicalDocument.code.translation.code">
          <path value="ClinicalDocument.code.translation.code"/>
@@ -201,7 +202,7 @@
          <max value="1"/>
          <binding>
             <strength value="extensible"/>
-            <valueSet value="http://fhir.ch/ig/ch-epr/ValueSet/DocumentEntry.confidentialityCode"/>
+            <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
          </binding>
       </element>
       <element id="ClinicalDocument.confidentialityCode.code">
@@ -230,9 +231,7 @@
          <path value="ClinicalDocument.languageCode"/>
          <min value="1"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.840.1.113883.1.11.11526-->
+         <!-- .. Warning: No corresponding FHIR ValueSet found for  2.16.840.1.113883.1.11.11526-->
       </element>
       <element id="ClinicalDocument.setId">
          <path value="ClinicalDocument.setId"/>
@@ -503,9 +502,7 @@
          <path value="ClinicalDocument.componentOf.encompassingEncounter.code"/>
          <min value="0"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.840.1.113883.1.11.13955-->
+         <!-- .. Warning: No corresponding FHIR ValueSet found for  2.16.840.1.113883.1.11.13955-->
       </element>
       <element id="ClinicalDocument.componentOf.encompassingEncounter.effectiveTime">
          <path value="ClinicalDocument.componentOf.encompassingEncounter.effectiveTime"/>
@@ -579,9 +576,7 @@
          <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.code"/>
          <min value="0"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.840.1.113883.1.11.17660-->
+         <!-- .. Warning: No corresponding FHIR ValueSet found for  2.16.840.1.113883.1.11.17660-->
       </element>
       <element id="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.location">
          <path value="ClinicalDocument.componentOf.encompassingEncounter.location.healthCareFacility.location"/>

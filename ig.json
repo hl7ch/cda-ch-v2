@@ -3,7 +3,8 @@
 		"resources": [
 			"resources",
 			"examples-errors",
-			"HipJointReplacement-de"],
+			"HipJointReplacement-de"
+		],
 		"pages": "pages",
 		"temp": "temp",
 		"output": "output",

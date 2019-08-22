@@ -47,9 +47,7 @@
          <path value="LegalAuthenticator.signatureCode"/>
          <min value="1"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.840.1.113883.1.11.10282-->
+         <!-- .. Warning: No corresponding FHIR ValueSet found for  2.16.840.1.113883.1.11.10282-->
       </element>
       <element id="LegalAuthenticator.signatureCode.code">
          <path value="LegalAuthenticator.signatureCode.code"/>

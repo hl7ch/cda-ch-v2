@@ -124,9 +124,7 @@
          <path value="Participant.associatedEntity.code"/>
          <min value="1"/>
          <max value="1"/>
-         <!--
-              Warning: No corresponding FHIR ValueSet found for
-              2.16.756.5.30.1.1.11.77-->
+         <!-- .. Warning: No corresponding FHIR ValueSet found for  2.16.756.5.30.1.1.11.77-->
       </element>
       <element id="Participant.associatedEntity.code.code">
          <path value="Participant.associatedEntity.code.code"/>
